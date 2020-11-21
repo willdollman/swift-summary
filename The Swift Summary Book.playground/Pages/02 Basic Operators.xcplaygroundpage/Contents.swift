@@ -44,10 +44,16 @@ for index in 1...5 {
 var array = [1,2,3]
 
 for index in 0..<array.count{
-    //It will iterate array.count times.
+    print("Index \(index) of array = \(array[index])")
+    //It will iterate array.count times and provided correct index value
 }
 
 // Enumerate array with index and value, C loop will be removed soon
 for (index, value) in array.enumerated() {
     print("value \(value) at index \(index)")
 }
+
+// This loops forever! Uses a one-sided range
+//for index in 2... {
+//    print("Got value \(index)")
+//}
